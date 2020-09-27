@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0ECEC"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="320dp"
+        android:background="#00BCD4"
+        android:paddingLeft="50dp"
+        android:paddingTop="10dp"
+        android:paddingRight="50dp"
+        android:paddingBottom="10dp"
+        android:shadowColor="#DC3F3F"
+        android:text="@string/minesweeper"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="@+id/select_difficulty"
+        app:layout_constraintStart_toStartOf="@+id/select_difficulty"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="343dp"
+        android:layout_height="210dp"
+        android:layout_marginBottom="380dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout2"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout2">
+
+        <RadioButton
+            android:id="@+id/easy"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/easy" />
+
+        <RadioButton
+            android:id="@+id/medium"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/medium" />
+
+        <RadioButton
+            android:id="@+id/hard"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/hard" />
+
+        <RadioButton
+            android:id="@+id/make_custom"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/custom" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/select_difficulty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select_difficulty"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintEnd_toEndOf="@+id/radioGroup"
+        app:layout_constraintStart_toStartOf="@+id/radioGroup" />
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="272dp"
+        android:layout_height="86dp"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/playnow"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/highscore"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/highscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="@string/high"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/start"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="130dp"
+            android:paddingTop="10dp"
+            android:paddingRight="50dp"
+            android:paddingBottom="10dp"
+            android:text="HOW TO PLAY"
+            android:textColor="#0C0C0C"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:shadowColor="#1B1919"
+            android:text="@string/text"
+            android:textColor="#151414"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

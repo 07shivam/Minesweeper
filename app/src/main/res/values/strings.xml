@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Minesweeper Project</string>
+    <string name="minesweeper">MINESWEEPER</string>
+    <string name="best_time">BEST TIME</string>
+    <string name="Last_game_time">LAST GAME TIME</string>
+    <string name="select_difficulty">DIFFICULTY</string>
+    <string name="easy">EASY</string>
+    <string name="medium">MEDIUM</string>
+    <string name="hard">HARD</string>
+    <string name="start">START</string>
+    <string name="mines_left">MINES</string>
+    <string name="time_spend">TIME</string>
+    <string name="restart">RESTART</string>
+    <string name="write_name">ENTER YOUR NAME</string>
+    <string name="make_custom_board">Make CuUSTOM BOARD</string>
+    <string name="write_width">PLEASE ENTER THE WIDTH</string>
+    <string name="write_height">PLEASE ENTER THE HEIGHT</string>
+    <string name="write_mines">PLEASE ENTER NO OF MINES</string>
+    <string name="textcutom">ENTER THE DIMENSION YOU WANT</string>
+    <string name="sub">SUBMIT</string>
+    <string name="high">HIGHSCORE</string>
+    <string name="custom">CUSTOM</string>
+    <string name="text">1. Normal Click For Checking\n2. Long Click For Flagging</string>
+
+
+
+
+
+</resources>
